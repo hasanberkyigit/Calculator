@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		9899B8F323072CD700429BFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9899B8F223072CD700429BFE /* AppDelegate.swift */; };
-		9899B8F523072CD700429BFE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9899B8F423072CD700429BFE /* ViewController.swift */; };
-		9899B8F823072CD700429BFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9899B8F623072CD700429BFE /* Main.storyboard */; };
 		9899B8FA23072CD800429BFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9899B8F923072CD800429BFE /* Assets.xcassets */; };
 		9899B8FD23072CD800429BFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9899B8FB23072CD800429BFE /* LaunchScreen.storyboard */; };
+		9899B90D2307357300429BFE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9899B90B2307357300429BFE /* HomeViewController.swift */; };
+		9899B90E2307357300429BFE /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9899B90C2307357300429BFE /* HomeViewController.xib */; };
+		9899B91123075B2100429BFE /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9899B91023075B2100429BFE /* UIButtonExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9899B8EF23072CD700429BFE /* Calculatorr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculatorr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9899B8F223072CD700429BFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9899B8F423072CD700429BFE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9899B8F723072CD700429BFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9899B8F923072CD800429BFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9899B8FC23072CD800429BFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9899B8FE23072CD800429BFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9899B90B2307357300429BFE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		9899B90C2307357300429BFE /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		9899B91023075B2100429BFE /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +57,78 @@
 			isa = PBXGroup;
 			children = (
 				9899B8F223072CD700429BFE /* AppDelegate.swift */,
-				9899B8F423072CD700429BFE /* ViewController.swift */,
-				9899B8F623072CD700429BFE /* Main.storyboard */,
+				9899B9092307322C00429BFE /* Supporting Files */,
+				9899B9082307321000429BFE /* Util */,
+				9899B906230731E200429BFE /* Controller */,
+				9899B905230731DC00429BFE /* View */,
+				9899B904230731D400429BFE /* Model */,
 				9899B8F923072CD800429BFE /* Assets.xcassets */,
-				9899B8FB23072CD800429BFE /* LaunchScreen.storyboard */,
-				9899B8FE23072CD800429BFE /* Info.plist */,
 			);
 			path = Calculatorr;
+			sourceTree = "<group>";
+		};
+		9899B904230731D400429BFE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9899B905230731DC00429BFE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9899B9072307320A00429BFE /* Launch */,
+				9899B90A2307338100429BFE /* Home */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9899B906230731E200429BFE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9899B90F230735A900429BFE /* Home */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9899B9072307320A00429BFE /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				9899B8FB23072CD800429BFE /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		9899B9082307321000429BFE /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				9899B91023075B2100429BFE /* UIButtonExtension.swift */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		9899B9092307322C00429BFE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9899B8FE23072CD800429BFE /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9899B90A2307338100429BFE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				9899B90C2307357300429BFE /* HomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		9899B90F230735A900429BFE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				9899B90B2307357300429BFE /* HomeViewController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,7 +191,7 @@
 			files = (
 				9899B8FD23072CD800429BFE /* LaunchScreen.storyboard in Resources */,
 				9899B8FA23072CD800429BFE /* Assets.xcassets in Resources */,
-				9899B8F823072CD700429BFE /* Main.storyboard in Resources */,
+				9899B90E2307357300429BFE /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,22 +202,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9899B8F523072CD700429BFE /* ViewController.swift in Sources */,
 				9899B8F323072CD700429BFE /* AppDelegate.swift in Sources */,
+				9899B90D2307357300429BFE /* HomeViewController.swift in Sources */,
+				9899B91123075B2100429BFE /* UIButtonExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9899B8F623072CD700429BFE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9899B8F723072CD700429BFE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9899B8FB23072CD800429BFE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -284,6 +344,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Calculatorr/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,6 +362,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Calculatorr/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
